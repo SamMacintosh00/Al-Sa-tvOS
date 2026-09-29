@@ -1,0 +1,39 @@
+name: Al-Sa
+options:
+  bundleIdPrefix: com.alsa
+  deploymentTarget:
+    tvOS: "26.0"
+  createIntermediateGroups: true
+
+settings:
+  base:
+    CODE_SIGN_STYLE: Manual
+    CODE_SIGNING_ALLOWED: "NO"
+    CODE_SIGNING_REQUIRED: "NO"
+
+targets:
+  Al-Sa:
+    type: application
+    platform: tvOS
+    sources:
+      - path: Al-Sa
+        excludes:
+          - Assets.xcassets/**
+    resources:
+      - path: Al-Sa/Assets.xcassets
+    info:
+      path: Al-Sa/Info.plist
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.alsa.tv
+        PRODUCT_NAME: Al-Sa
+        INFOPLIST_FILE: Al-Sa/Info.plist
+        SDKROOT: appletvos
+        TARGETED_DEVICE_FAMILY: "3"
+        TVOS_DEPLOYMENT_TARGET: "26.0"
+        ASSETCATALOG_COMPILER_APPICON_NAME: "App Icon & Top Shelf Image"
+        OTHER_LDFLAGS: "$(inherited)"
+      configs:
+        Release:
+          CODE_SIGNING_ALLOWED: "NO"
+          CODE_SIGNING_REQUIRED: "NO"

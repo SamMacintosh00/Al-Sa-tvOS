@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleDisplayName</key><string>Al-Sa</string>
+    <key>CFBundleIdentifier</key><string>com.alsa.tv</string>
+    <key>CFBundleName</key><string>Al-Sa</string>
+    <key>CFBundlePackageType</key><string>APPL</string>
+    <key>CFBundleShortVersionString</key><string>1.0</string>
+    <key>CFBundleVersion</key><string>1</string>
+    <key>CFBundleIcons</key>
+    <dict>
+        <key>CFBundlePrimaryIcon</key>
+        <dict>
+            <key>CFBundleIconFiles</key>
+            <array><string>App Icon</string></array>
+        </dict>
+    </dict>
+    <key>TVTopShelfImage</key><string>Top Shelf Image</string>
+    <key>TVTopShelfPrimaryImageWide</key><string>Top Shelf Image Wide</string>
+</dict>
+</plist>
